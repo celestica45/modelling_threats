@@ -1,5 +1,5 @@
 {
-  "version": "2.3.0",
+  "version": "2.5.0",
   "summary": {
     "title": "New Threat Model",
     "owner": "Jose Carlos Rivera",
@@ -15,7 +15,7 @@
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
-        "version": "2.3.0",
+        "version": "2.5.0",
         "cells": [
           {
             "position": {
@@ -181,13 +181,15 @@
               "name": "Auth\nVerification",
               "description": "",
               "outOfScope": false,
+              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [],
+              "trustBoundaryIds": []
             },
             "labels": [
               "Auth\nVerification"
@@ -231,13 +233,15 @@
               "name": "Verified",
               "description": "",
               "outOfScope": false,
+              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [],
+              "trustBoundaryIds": []
             },
             "labels": [
               "Verified"
@@ -269,7 +273,9 @@
               "name": "Generic Trust\nBoundary",
               "description": "",
               "isTrustBoundary": true,
-              "hasOpenThreats": false
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
             },
             "labels": [
               "Generic Trust\nBoundary"
@@ -301,7 +307,9 @@
               "name": "Generic Trust\nBoundary",
               "description": "",
               "isTrustBoundary": true,
-              "hasOpenThreats": false
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
             },
             "labels": [
               "Generic \nTrust Boundary"
@@ -345,13 +353,15 @@
               "name": "Insert Feedback Comments",
               "description": "",
               "outOfScope": false,
+              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [],
+              "trustBoundaryIds": []
             },
             "labels": [
               "Insert Feedback Comments"
@@ -399,13 +409,15 @@
               "name": "User is Authenticated",
               "description": "",
               "outOfScope": false,
+              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [],
+              "trustBoundaryIds": []
             },
             "labels": [
               "User is Authenticated"
@@ -453,13 +465,15 @@
               "name": "Data Flow",
               "description": "",
               "outOfScope": false,
+              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [],
+              "trustBoundaryIds": []
             },
             "labels": [
               {
@@ -513,13 +527,15 @@
               "name": "Verified",
               "description": "",
               "outOfScope": false,
+              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [],
+              "trustBoundaryIds": []
             },
             "labels": [
               "Verified"
@@ -567,13 +583,15 @@
               "name": "Verifies the Privilege",
               "description": "",
               "outOfScope": false,
+              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [],
+              "trustBoundaryIds": []
             },
             "labels": [
               "Verifies the Privilege"
@@ -622,6 +640,7 @@
               "name": "Feedback Comment Saved",
               "description": "",
               "outOfScope": false,
+              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
               "isBidirectional": false,
@@ -656,6 +675,7 @@
                   "score": ""
                 }
               ],
+              "trustBoundaryIds": [],
               "threatFrequency": {
                 "tampering": 1,
                 "informationDisclosure": 2,
@@ -696,7 +716,9 @@
               "name": "Generic Trust\nBoundary",
               "description": "",
               "isTrustBoundary": true,
-              "hasOpenThreats": false
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
             },
             "labels": [
               "Generic Trust\nBoundary"
@@ -894,13 +916,15 @@
               "name": "Success=1",
               "description": "",
               "outOfScope": false,
+              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [],
+              "trustBoundaryIds": []
             },
             "labels": [
               "Success=1"
@@ -948,13 +972,15 @@
               "name": "Insert Query with Feedback Comments",
               "description": "",
               "outOfScope": false,
+              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [],
+              "trustBoundaryIds": []
             },
             "labels": [
               "Insert Query with Feedback Comments"
@@ -1331,6 +1357,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 28,
             "ports": {
               "groups": {
                 "top": {
@@ -1487,8 +1514,7 @@
                 "denialOfService": 1,
                 "elevationOfPrivilege": 2
               }
-            },
-            "zIndex": 28
+            }
           }
         ]
       }
